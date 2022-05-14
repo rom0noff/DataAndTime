@@ -13,12 +13,13 @@ public class YearsCalculate {
         int yearNum = scanner.nextInt();
         int sum =0;
         int count = 1;
-        while (count <= 12) {
-            YearMonth yearMonth = YearMonth.of(yearNum, count);
-            sum += yearMonth.lengthOfMonth();
-            count++;
-        }
-        System.out.println(yearNum + " yilda " + sum + " kun bor.");
+
+            while (count <= 12) {
+                YearMonth yearMonth = YearMonth.of(yearNum, count);
+                sum += yearMonth.lengthOfMonth();
+                count++;
+            }
+            System.out.println(yearNum + " yilda " + sum + " kun bor.");
 
         System.out.println("--------------------");
 
